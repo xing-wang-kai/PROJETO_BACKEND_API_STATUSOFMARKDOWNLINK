@@ -1,0 +1,18 @@
+{
+  "name": "read-Markdown-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "node cli.js ./files"
+  },
+  "keywords": [],
+  "author": "Kai Wang",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "path": "^0.12.7"
+  }
+}
