@@ -23,8 +23,6 @@ function tratarError(erro){
     throw new Error(error(erro.message), alert("Ocorreu um Error Verifique as informações!"));
 }
     
-
-
 async function pegarArquivo(caminhoArquivo){
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
@@ -39,47 +37,9 @@ async function pegarArquivo(caminhoArquivo){
                 const texto = await fs.promises.readFile(caminhoNovo, enconding)
                 return extrairLinks(texto)
         }))
-        return textos.map( texto => {return console.log(texto)});
+        return textos.map( texto => {return texto});
     }catch(err){
         tratarError(err)
     }
-
-    // try{
-    //     const arquivos = await fs.promises.readdir(caminhoAbsoluto, (err, arquivo)=> {return arquivo});
-        
-    //     const resultado = await Promises.all(arquivos.map( async (arquivo) => {
-    //         const caminho = `${caminhoAbsoluto}/${arquivo}`;
-    //         const texto = await fs.promises.readFile(caminho, enconding);
-    //         return texto
-    //     }));
-    //     return resultado.map(async item => await extrairLinks(item));
-    // }
-    // catch(error){
-    //     tratarError(error)
-    // }
-    // finally{
-    //     console.log("");
-    //     console.log(sucesso("Leitura do Arquivo realizada com sucesso! -->> PROXIMA ESTAPA..."))
-    // }
-
 }
-
-
-// function pegaArquivo(caminhoArquivo){
-//     const enconding = 'utf-8';
-//     fs.promises.readFile(caminhoArquivo, enconding)
-//     .then((texto)=> console.log(sucesso(texto)))
-//     .catch((erro) => tratarError(erro))
-// }
-
-
-// function pegaArquivo(caminhoArquivo){
-//     const enconding = 'utf-8';
-//     fs.readFile(caminhoArquivo, enconding, (erro, texto) => {
-//         if(erro){
-//             tratarError(erro);
-//         }
-//         console.log(`${sucesso(texto)}`)
-//     } )
-// }
-export default pegarArquivo ;
+export default pegarArquivo;
