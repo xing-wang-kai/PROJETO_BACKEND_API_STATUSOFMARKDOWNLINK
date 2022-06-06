@@ -5,10 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./test",
     "cli": "node cli.js ./files",
     "validar": "node cli.js ./files validar"
   },
+  
   "keywords": [],
   "author": "Kai Wang",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "chalk": "^5.0.1",
     "node-fetch": "^3.2.5",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
   }
 }
