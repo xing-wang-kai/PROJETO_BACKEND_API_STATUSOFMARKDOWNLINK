@@ -13,7 +13,7 @@ O usuário também poderá ter o retorno de informações como somente um array 
 
 Retornos dos Links No caso validar: 
 
-<img align="center" alt="retornos API" src="./src/retornos.png">
+<img align="center" alt="retornos API" src="https://github.com/xing-wang-kai/PROJETO_BACKEND_API_STATUSOFMARKDOWNLINK/blob/master/SRC/retornos.png?raw=true">
 
 ### SOBRE O CHALK
 
