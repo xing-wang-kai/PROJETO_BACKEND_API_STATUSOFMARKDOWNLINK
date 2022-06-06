@@ -11,6 +11,9 @@ Ao executar o comando "npm run cli" o sistema vai retorna um array com objetos c
 
 O usuário também poderá ter o retorno de informações como somente um array de link usando o processo VALIDAR. Nesse caso o mesmo deverá digitar "npm run validar", o sistema irá retornar um array com todos links e códigos de retornos.
 
+Retornos dos Links No caso validar: 
+
+<img align="center" alt="retornos API" src="./src/retornos da API.png">
 
 ### SOBRE O CHALK
 
